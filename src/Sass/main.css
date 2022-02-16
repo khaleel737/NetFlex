@@ -1,0 +1,365 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    font-size: 62.5%;
+    border: 1px red solid;
+}
+
+body, html {
+    background-color: #141414;
+}
+
+.h1-title {
+margin: 4% 0 4% 0;
+}
+
+
+h1 {
+    font-size: 2.5vw;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+}
+
+
+h2 {
+    font-size: 1.6vw;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+}
+
+p {
+        font-size: 1.3vw;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+}
+
+.button-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0 4% 0;
+}
+
+.play-button {
+    background-color: white;
+    color: black;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    size: 1rem;
+}
+
+
+html,body{
+    margin: 0 auto;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  
+  main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    
+  }
+  /*  */
+  .button {
+    height: 40px;
+    width: 80px;
+    background-color: white;
+    padding: 6px 30px 6px 30px;
+    cursor: pointer;
+    position: relative;
+    overflow:hidden;
+    z-index: 1;
+    box-shadow: inset 0 0 20px rgba(255, 166, 170, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 166, 170, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .button a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: inherit;
+    position: absolute;
+    text-decoration: none;
+    color: #E50914;
+    z-index: 1;
+    transition: color .2s;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .button a:hover {
+    color: white;
+  }
+  
+  .background__button {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #E50914;
+    border-radius: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    transition: width .3s, height .3s, box-shadow .3s;
+  }
+  
+  
+  .background__button.is-hover {
+     width: 200px;
+    height: 200px;
+    box-shadow: inset 0px 0px 300px -40px     rgba(0,0,0,1);
+  }
+  
+  .button:hover {
+    box-shadow: inset 0 0 20px rgba(255, 166, 170, .5), 0 0 20px rgba(255, 126, 133, .2);
+    outline-color: rgba(255, 166, 170, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+  }
+  
+  /*  */
+  
+
+
+.info-button {
+
+        background-color: #6d6d63be;
+        color: white;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 4px;
+        padding: 0.7rem;
+}
+body {
+    font-size: 1.6em;
+}
+
+.header {
+    display: flex;
+    background-position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1% 0 0 5%;
+    /* height: 0; */
+}
+
+.nav-div {
+    margin-left: 3%;
+}
+
+.nav-div a {
+color: #e5e5e5;
+text-decoration: none;
+}
+
+.header img {
+size: auto;
+}
+
+
+.header a {
+    font-size: 1rem;
+    font-style: none;
+    
+}
+
+.home-page {
+    height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-page-image {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 23% 70% 0 2%;
+}
+
+.boxes {
+    height: 128px;
+    width: 228px;
+    margin: 0.04%;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.h3-title {
+    padding: 0 0 0 4%;
+    color: white;
+    margin-bottom: 1rem;
+
+}
+
+.boxes h3 {
+    display: none;
+}
+
+/* .boxes h3 {
+margin-top: 70%;
+} */
+
+.categories-slider {
+overflow: auto;
+/* padding: 0 4%; */
+}
+
+.categories-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+.Popular-slider {
+    overflow: auto;
+    /* padding: 0 4%; */
+}
+.Popular-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+.trending-slider {
+    overflow: auto;
+    /* padding: 0 4%; */
+}
+.trending-slider::-webkit-scrollbar {
+    display: none;
+    
+  }
+
+.slider-flex {
+    display: inline-flex;
+}
+
+
+.Comedies-slider {
+    overflow: auto;
+    /* padding: 0 4%; */
+}
+
+.Comedies-slider::-webkit-scrollbar {
+    display: none;
+  }
+.Comedies {
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.drama {
+background-size:cover;
+background-repeat: no-repeat;
+
+}
+
+.action {
+background-size:cover;
+background-repeat: no-repeat;
+
+}
+
+.Realities {
+    background-size: contain;
+
+}
+
+.Romance {
+    background-size: contain;
+
+}
+
+
+.Crime {
+    background-size: contain;
+}
+.Documentaries{
+    background-size: contain;
+}
+.SCI-FI     {
+    background-size: contain;
+}      
+.Thriller     {
+    background-size: contain;
+}       
+.LGBTQ     {
+    background-size: contain;
+}     
+.Children      {
+    background-size: contain;
+}    
+.International    {
+    background-size: contain;
+}     
+.Fantasy    {
+    background-size: contain;
+}     
+.Horror      {
+    background-size: contain;
+}
+
+.Stand-Up         {
+    background-size: contain;
+}  
+.Music          {
+    background-size: contain;
+} 
+.Independant       {
+    background-size: contain;
+}   
+.Anime           {
+    background-size: contain;
+}
+        
+

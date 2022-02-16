@@ -1,0 +1,30 @@
+{
+  "name": "netflex",
+  "version": "1.0.0",
+  "description": "Netflex Clone",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaleel737/NETFLEX.git"
+  },
+  "author": "khaleel-musleh",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "http-proxy-middleware": "^2.0.2",
+    "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "core-js": "^3.19.3",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "bugs": {
+    "url": "https://github.com/khaleel737/NETFLEX/issues"
+  },
+  "homepage": "https://github.com/khaleel737/NETFLEX#readme"
+}
