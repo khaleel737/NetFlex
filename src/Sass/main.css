@@ -194,7 +194,15 @@ body {
     background-repeat: no-repeat;
     padding: 1% 0 0 5%;
     /* height: 0; */
+    justify-content: space-evenly;
 }
+
+.image {
+    /* margin: 0 9%; */
+    padding: 0 0.2%;
+    /* justify-content: space-evenly; */
+}
+
 
 .nav-div {
     margin-left: 3%;
