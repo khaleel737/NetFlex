@@ -35,4 +35,4 @@ const loadMovieDB = async function (language, adult = false, video = true) {
 loadMovieDB('en-US', false, true)
 
 
-export default loadMovieDB()
+export default loadMovieDB;

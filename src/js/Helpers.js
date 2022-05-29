@@ -48,13 +48,14 @@ const timeout = function (s) {
 
 export const AJAX = async function (url = '', data = undefined) {
     try {
+       
         const fetchURL =  data ? fetch(url, {
-            method: 'GET', // *GET, POST, PUT, DELETE, etc.
-            mode: 'cors', // no-cors, *cors, same-origin
+            method: '*GET', // *GET, POST, PUT, DELETE, etc.
+            mode: 'no-cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-            credentials: 'same-origin', // include, *same-origin, omit
+            credentials: 'omit', // include, *same-origin, omit
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
                 // 'Content-Type': 'application/x-www-form-urlencoded',
             },
             redirect: 'follow', // manual, *follow, error

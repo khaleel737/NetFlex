@@ -14,9 +14,10 @@
   "author": "khaleel-musleh",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
     "@parcel/transformer-sass": "^2.0.1",
     "http-proxy-middleware": "^2.0.2",
-    "parcel": "^2.0.1"
+    "parcel": "^2.0.0-rc.0"
   },
   "dependencies": {
     "core-js": "^3.19.3",
@@ -26,5 +27,10 @@
   "bugs": {
     "url": "https://github.com/khaleel737/NETFLEX/issues"
   },
-  "homepage": "https://github.com/khaleel737/NETFLEX#readme"
+  "homepage": "https://github.com/khaleel737/NETFLEX#readme",
+  "main": "index.js",
+  "keywords": [
+    "Netflix",
+    "Clone"
+  ]
 }
