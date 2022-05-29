@@ -32,7 +32,7 @@ const loadMovieDB = async function (language, adult = false, video = true) {
 
 }
 
-loadMovieDB('en-US', false, true)
+loadMovieDB('de-DE', false, true)
 
 
 export default loadMovieDB;

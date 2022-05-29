@@ -15,13 +15,13 @@ export const loadRecipe = async function (Movies, timeWindow) {
 
         // console.log(data)
 
-        const dataTwo = await AJAX(`${API_URL}/trending/${'all'}/${'week'}?api_key=${KEY}`);
+        const dataTwo = await AJAX(`${API_URL}/trending/${'all'}/${'day'}?api_key=${KEY}`);
 
         console.log(dataTwo)
 
+        console.log('THIS IS BULLSHIT ON BUTTER')
 
-
-        const testingAll = await AJAX(`https://api.themoviedb.org/3/discover/movie?api_key=${KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate`)
+        const testingAll = await AJAX(`https://api.themoviedb.org/3/discover/movie?api_key=${KEY}&language=de-DE&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate`)
 
         console.log(testingAll);
 
