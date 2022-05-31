@@ -40,7 +40,7 @@ export const loadRecipe = async function (Movies, timeWindow) {
                 const sliderMaker = testingAll.results.map(trending => {
            const allSlider = slider.forEach(slide => {
                const trendingSlider = ` <div class="card-style boxes">  
-               <div style="background-image: url('https://image.tmdb.org/t/p/w500/${trending.backdrop_path}');" class='image-display'>
+               <div style="background-image: url('https://image.tmdb.org/t/p/w500/${trending.backdrop_path}');" class='image-display boxes'>
                    </div>
                    <div class="lower-section inactive">
                    <div class="card-buttons inactive">
