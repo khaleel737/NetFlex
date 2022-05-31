@@ -88,6 +88,45 @@ export const loadRecipe = async function (Movies, timeWindow) {
             })
         });
 
+        const cards = document.querySelectorAll(".card-style");
+       
+        // console.log(cards)
+        const eachCard = cards.forEach(card => {
+
+                    const imageDiv = card.children[0]
+                    const lowerSecDiv = card.children[1]
+                    const cardBtnsDiv = card.children[1].children[0]
+                    const frstThreeBtnsDiv = card.children[1].children[0].children[0]
+
+
+                    // console.log(imageDiv)
+                    // console.log(lowerSecDiv)
+                    // console.log(cardBtnsDiv)
+                    // console.log(frstThreeBtnsDiv)
+
+
+                    const cardActive = card.addEventListener('mouseover', () => {
+                        card.classList.remove('boxes')
+                        imageDiv.classList.remove('boxes')
+                        lowerSecDiv.classList.remove('inactive')
+                        cardBtnsDiv.classList.remove('inactive')
+                        frstThreeBtnsDiv.classList.remove('inactive')
+                    })
+
+                    const cardInactive = card.addEventListener('mouseout', () => {
+                        card.classList.add('boxes')
+                        imageDiv.classList.add('boxes')
+                        lowerSecDiv.classList.add('inactive')
+                        cardBtnsDiv.classList.add('inactive')
+                        frstThreeBtnsDiv.classList.add('inactive')
+                    })
+            
+        })
+
+        // console.log(cards)
+
+        console.log(cards)
+
 //         <div class="card-style">  
 //         <div style="background-image: url('https://image.tmdb.org/t/p/w500//iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg');" class='image-display'>
 //             <!-- <h2>Trending</h2> -->
