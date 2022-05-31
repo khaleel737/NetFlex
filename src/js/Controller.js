@@ -2,8 +2,9 @@
 
 import { AJAX } from './Helpers.js';
 import { API_URL, KEY } from './Config.js'
-// import 'regenerator-runtime/runtime'
-
+import 'regenerator-runtime/runtime'
+import { parser } from 'posthtml-parser'
+import fs from 'fs'
 // import * as Model  from './Model';
 
 
@@ -33,6 +34,50 @@ export const loadRecipe = async function (Movies, timeWindow) {
                slide.insertAdjacentHTML('afterbegin', trendingSlider)
             })
         });
+
+
+
+const html = fs.readFileSync('path/to/index.html', 'utf-8')
+
+console.log(parser(html)) // Logs a PostHTML AST
+
+        // const sliderMaker = testingAll.results.map(trending => {
+        //     const allSlider = slider.forEach(slide => {
+        //         const trendingSlider = `<section class="categories-for-you h3-title">
+        //         <div>
+        //         <h3>${'This is testing'}</h3>
+        //         </div>
+        //         <div class="categories-slider">
+        //         <div class="slider-flex">
+        //         <div style="background-image: url('https://image.tmdb.org/t/p/w500/${trending.backdrop_path}');" class='Trending boxes'><h3>${trending.original_title}</h3></div>
+        //         </div>
+        //         </div>
+        //         </section>`               
+        //         slide.insertAdjacentHTML('afterend', trendingSlider)
+        //      })
+        //  });
+
+
+
+    //     <section class="categories-for-you h3-title">
+    //     <div>
+    //         <h3>`${This is testing}`</h3>
+    //     </div>
+    //     <div class="categories-slider">
+    //         <div class="slider-flex">
+    //         <div style="background-image: url('https://image.tmdb.org/t/p/w500/${trending.backdrop_path}');" class='Trending boxes'><h3>${trending.original_title}</h3></div>
+    //     </div>
+    // </div>
+    // </section>
+
+
+        // document.querySelectorAll('.boxes').forEach(box => {
+
+        //   box.addEventListener('mouseover', function () {
+        //     box.classList.add("boxes-new")
+        //   })
+        //   console.log(box)
+        // })
 
 
     } catch (err) {
