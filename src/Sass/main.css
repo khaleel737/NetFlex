@@ -43,7 +43,7 @@ table {
 
 * {
     font-size: 62.5%;
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 
 body, html {
