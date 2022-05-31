@@ -43,7 +43,7 @@ table {
 
 * {
     font-size: 62.5%;
-    /* border: 1px red solid; */
+    border: 1px red solid;
 }
 
 body, html {
@@ -249,25 +249,13 @@ body {
     margin-left: 3%;
 }
 
-.card-buttons {
-    display: flex;
-    justify-content: space-between;
-    /* margin: 0% 0; */
-    padding: 0 4%;
-    /* margin-top: 4%; */
-}
 
 .testing {
     height: 500px;
 }
 
-.image-display {
-    height: 50%;
-    /* width: 338px; */
-    /* margin: 0.04%; */
-    border-radius: 4px;
-    text-align: center;
-    transition: 500ms;
+.inactive {
+display: none;
 }
 
 .card-style {
@@ -288,14 +276,23 @@ body {
 }
 
 
+.image-display {
+    height: 50%;
+    border-radius: 4px;
+    text-align: center;
+    transition: 500ms;
+}
 
 .lower-section {
     background-color: #181818;
-    /* margin-top: 5%; */
     padding: 4%;
-    /* margin: 2% 0; */
 }
 
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4%;
+}
 
 
 
@@ -430,14 +427,14 @@ size: auto;
     transition: 500ms;
 }
 
-.boxes:active{
+/* .boxes:active{
     height: 328px;
     width: 528px;
     margin: 0.04%;
     border-radius: 4px;
     transition: 500ms;
     text-align: center;
-}
+} */
 
 .h3-title {
     padding: 0 0 0 4%;

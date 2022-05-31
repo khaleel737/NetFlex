@@ -39,13 +39,12 @@ export const loadRecipe = async function (Movies, timeWindow) {
 
                 const sliderMaker = testingAll.results.map(trending => {
            const allSlider = slider.forEach(slide => {
-               const trendingSlider = ` <div class="card-style">  
+               const trendingSlider = ` <div class="card-style boxes">  
                <div style="background-image: url('https://image.tmdb.org/t/p/w500/${trending.backdrop_path}');" class='image-display'>
-                   <!-- <h2>Trending</h2> -->
                    </div>
-                   <div class="lower-section">
-                   <div class="card-buttons">
-                   <div class="first-three-buttons">
+                   <div class="lower-section inactive">
+                   <div class="card-buttons inactive">
+                   <div class="first-three-buttons inactive">
                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                        <a href="https://developer.mozilla.org/">
                            <path d="M8.22852 6.17145L18.5142 11.6572L8.22852 17.1429V6.17145Z" fill="white"/>
