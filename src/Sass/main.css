@@ -68,6 +68,12 @@ h2 {
     text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
 }
 
+h3 {
+    font-size: 1vw;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+}
+
 p {
         font-size: 1.3vw;
         color: #fff;
@@ -248,6 +254,7 @@ body {
     justify-content: space-between;
     /* margin: 0% 0; */
     padding: 0 4%;
+    /* margin-top: 4%; */
 }
 
 .testing {
@@ -274,7 +281,7 @@ body {
     border-radius: 3%;
 }
 
-.card-style h2 {
+.card-style h3 {
     text-align: left;
     margin: 4% 0;
     padding: 0 4%;
@@ -284,7 +291,9 @@ body {
 
 .lower-section {
     background-color: #181818;
-    margin-top: 5%;
+    /* margin-top: 5%; */
+    padding: 4%;
+    /* margin: 2% 0; */
 }
 
 
