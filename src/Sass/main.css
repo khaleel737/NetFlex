@@ -43,7 +43,7 @@ table {
 
 * {
     font-size: 62.5%;
-    /* border: 1px red solid; */
+    border: 1px red solid;
 }
 
 body, html {
@@ -106,7 +106,8 @@ html,body{
     background-color: #181818;
     
   }
-  /*  */
+
+
   .button {
     height: 40px;
     width: 80px;
@@ -195,9 +196,9 @@ html,body{
 }
 body {
     font-size: 1.6em;
-    padding: 0 4%;
-
 }
+
+
 
 .header {
     display: flex;
@@ -242,6 +243,56 @@ body {
     margin-left: 3%;
 }
 
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0% 0; */
+    padding: 0 4%;
+}
+
+.testing {
+    height: 500px;
+}
+
+.image-display {
+    height: 50%;
+    /* width: 338px; */
+    /* margin: 0.04%; */
+    border-radius: 4px;
+    text-align: center;
+    transition: 500ms;
+}
+
+.card-style {
+    /* display: none; */
+    height: 351px;
+    width: 336px;
+    margin: 0% 0.1%;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    transition: 500ms;
+    border-radius: 3%;
+}
+
+.card-style h2 {
+    text-align: left;
+    margin: 4% 0;
+    padding: 0 4%;
+}
+
+
+
+.lower-section {
+    background-color: #181818;
+    margin-top: 5%;
+}
+
+
+
+
+/* .slider-flx .card-buttons {
+} */
+
 .header-nav {
     /* margin-right: 20%; */
     display: flex;
@@ -268,8 +319,8 @@ ul {
     padding-inline-start: 40px;
 }
 
-.current {
-    border-bottom: #e5e5e5 2px solid;
+.tabbed-primary-navigation .current {
+color: #fff;
 }
 
 .tabbed-primary-navigation {
@@ -303,14 +354,21 @@ ul {
     align-items: center;
     /* text-align: center; */
     padding-inline-end: 20px;
+    /* padding-bottom: 20px; */
 
 }
 
+/* .navigation-tab {
+    padding-bottom: 20px;
+} */
 
-.navigation-tab {
+.navigation-tab   {
     list-style-type: none;
     margin-left: 18px;
+    /* padding-bottom: 17px; */
 }
+
+
 
 .nav-element:not(:last-child) {
     margin-right: 15px;
@@ -344,6 +402,7 @@ size: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 0 4%;
 }
 
 .home-page-image {
@@ -372,7 +431,7 @@ size: auto;
 }
 
 .h3-title {
-    padding: 0 0 0 0;
+    padding: 0 0 0 4%;
     color: white;
     margin-bottom: 1rem;
 
@@ -388,7 +447,7 @@ margin-top: 70%;
 
 .categories-slider {
 overflow: auto;
-/* padding: 0 4%; */
+padding: 0 0%;
 }
 
 .categories-slider::-webkit-scrollbar {

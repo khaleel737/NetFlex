@@ -56,6 +56,7 @@ export const AJAX = async function (url = '', data = undefined) {
             credentials: 'omit', // include, *same-origin, omit
             headers: {
                 'Content-Type': 'application/json',
+                'Cross-Origin-Resource-Policy': '*',
                 // 'Content-Type': 'application/x-www-form-urlencoded',
             },
             redirect: 'follow', // manual, *follow, error
