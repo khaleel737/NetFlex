@@ -77,7 +77,7 @@ export const loadRecipe = async function (Movies, timeWindow) {
                <h2>TV-MOV 2H HD</h2>
                <!-- Movie Genre -->
                <h2 class="movie-genre">
-                   Relaxing | Witty | Food & Romance
+                   ${trending.original_title}
                </h2>
            </div>
        </div>`               
