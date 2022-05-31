@@ -2,8 +2,8 @@
 
 import { AJAX } from './Helpers.js';
 import { API_URL, KEY } from './Config.js'
-import 'regenerator-runtime/runtime'
-import { parser } from 'posthtml-parser'
+// import 'regenerator-runtime/runtime'
+// import { parser } from 'posthtml-parser'
 import fs from 'fs'
 // import * as Model  from './Model';
 
@@ -37,9 +37,9 @@ export const loadRecipe = async function (Movies, timeWindow) {
 
 
 
-const html = fs.readFileSync('path/to/index.html', 'utf-8')
+// const html = fs.readFileSync('path/to/index.html', 'utf-8')
 
-console.log(parser(html)) // Logs a PostHTML AST
+// console.log(parser(html)) // Logs a PostHTML AST
 
         // const sliderMaker = testingAll.results.map(trending => {
         //     const allSlider = slider.forEach(slide => {
