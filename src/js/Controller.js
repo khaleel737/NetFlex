@@ -4,7 +4,7 @@ import { AJAX } from './Helpers.js';
 import { API_URL, KEY } from './Config.js'
 // import 'regenerator-runtime/runtime'
 // import { parser } from 'posthtml-parser'
-import fs from 'fs'
+// import fs from 'fs'
 // import * as Model  from './Model';
 
 
